@@ -1,45 +1,100 @@
 .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 190px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  
-    overflow: hidden;
-  }
-  
-  .nav-item {
-    position: relative;
-  
-    width: 110px;
-    height: 150px;
-    flex-shrink: 0;
-  
-    border: none;
-    background: #B36568;
-  
-    border-radius: 55px 55px 0 0;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    padding-top: 0;
-  
-    color: #77736c;
-  }
-  
-  .nav-item.active {
-    color: #E5989B;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
 
-  .nav-item svg {
-    position: relative;
-    z-index: 1;
-  
-    margin-top: 20px;
-  }
+  width: 100%;
+  height: 190px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  pointer-events: none;
+}
+
+.nav-items {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: max-content;
+
+  transform: translateY(0);
+}
+
+.nav-item {
+  position: relative;
+
+  width: 110px;
+  height: 150px;
+
+  flex-shrink: 0;
+
+  border: none;
+  padding: 0;
+
+  background: #B36568;
+
+  border-radius: 55px 55px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #77736c;
+
+  pointer-events: auto;
+
+  cursor: pointer;
+}
+
+/* De två yttersta rektanglarna */
+.nav-item.decorative {
+  pointer-events: none;
+}
+
+/* Cirkeln längst upp */
+.nav-icon {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  background: #f3f0e9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #77736c;
+}
+
+/* Texten under cirkeln */
+.nav-item span {
+  position: absolute;
+
+  top: 118px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #77736c;
+}
+
+/* Aktiv tab */
+.nav-item.active .nav-icon {
+  background: #E5989B;
+  color: white;
+}
+
+.nav-item.active span {
+  color: #E5989B;
+}
