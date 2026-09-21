@@ -96,10 +96,6 @@ function Home() {
     <main className="app">
       <header className="header">
         <h1>Skafferiet</h1>
-
-        <button className="scan-button">
-          Skanna
-        </button>
       </header>
 
       <div className="search-container">
