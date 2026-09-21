@@ -31,8 +31,6 @@ function BottomNav({ currentPage, setCurrentPage }) {
               <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6" />
             </svg>
           </div>
-
-          <span>Hem</span>
         </button>
 
         {/* KAMERA */}
@@ -57,8 +55,6 @@ function BottomNav({ currentPage, setCurrentPage }) {
               <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
             </svg>
           </div>
-
-          <span>Kamera</span>
         </button>
 
         {/* HANDLINGSLISTA */}
@@ -87,8 +83,6 @@ function BottomNav({ currentPage, setCurrentPage }) {
               <path d="M9 16h6" />
             </svg>
           </div>
-
-          <span>Handla</span>
         </button>
 
         {/* TOM HÖGER */}
