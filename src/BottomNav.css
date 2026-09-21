@@ -22,7 +22,7 @@
 
   width: max-content;
 
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .nav-item {
