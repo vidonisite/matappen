@@ -21,7 +21,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .header h1 {
@@ -46,8 +46,8 @@ button {
 .search-container input {
   width: 100%;
   padding: 15px 18px;
-  border: 1px solid #dedbd4;
-  border-radius: 16px;
+  border: 1px solid #B36568;
+  border-radius: 26px;
   outline: none;
   background: #B36568;
   opacity: 20%;
@@ -96,7 +96,7 @@ button {
   height: 48px;
   flex-shrink: 0;
   border-radius: 14px;
-  background: #f3f0e9;
+  background: #FFCDB2;
   font-size: 25px;
 }
 
@@ -129,6 +129,8 @@ button {
   border-radius: 10px;
   background: #FFCDB2;
   font-size: 20px;
-  line-height: 1;
   color: #D38184;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

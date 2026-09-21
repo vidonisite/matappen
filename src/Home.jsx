@@ -148,8 +148,6 @@ function Home() {
                     −
                   </button>
 
-                  <span>{product.quantity}</span>
-
                   <button
                     onClick={() => changeQuantity(product, 1)}
                     aria-label={`Öka mängden av ${product.name}`}

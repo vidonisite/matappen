@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { supabase } from "./supabaseClient";
 import Login from "./Login";
 import Home from "./Home";
+import BottomNav from "./BottomNav";
 
 function App() {
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState("hem");
 
   useEffect(() => {
     async function getSession() {
@@ -38,7 +40,28 @@ function App() {
     return <Login />;
   }
 
-  return <Home />;
+  return (
+    <>
+      {currentPage === "hem" && <Home />}
+
+      {currentPage === "kamera" && (
+        <main>
+          <h1>Kamera</h1>
+        </main>
+      )}
+
+      {currentPage === "handling" && (
+        <main>
+          <h1>Handlingslista</h1>
+        </main>
+      )}
+
+      <BottomNav
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
+    </>
+  );
 }
 
 export default App;
