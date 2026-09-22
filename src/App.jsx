@@ -3,6 +3,7 @@ import { supabase } from "./supabaseClient";
 import Login from "./Login";
 import Home from "./Home";
 import BottomNav from "./BottomNav";
+import Scanner from "./Scanner";
 
 function App() {
   const [session, setSession] = useState(null);
@@ -44,11 +45,7 @@ function App() {
     <>
       {currentPage === "hem" && <Home />}
 
-      {currentPage === "kamera" && (
-        <main>
-          <h1>Kamera</h1>
-        </main>
-      )}
+      {currentPage === "kamera" && <Scanner />}
 
       {currentPage === "handling" && (
         <main>
