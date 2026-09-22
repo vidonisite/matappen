@@ -38,14 +38,23 @@
   justify-content: center;
 }
 
-.scanner-frame {
-  width: 75%;
-  height: 35%;
+#barcode-reader {
+  width: 100%;
+  height: 100%;
+}
 
-  border: 3px solid white;
-  border-radius: 18px;
+#barcode-reader video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
 
-  box-sizing: border-box;
+#barcode-reader__scan_region {
+  border: none !important;
+}
+
+#barcode-reader__dashboard {
+  display: none !important;
 }
 
 .scanner-text {
@@ -57,4 +66,123 @@
   color: #6f5550;
 
   text-align: center;
+}
+
+.scanner-message {
+  margin: 12px 0 0;
+
+  color: #6f5550;
+
+  text-align: center;
+}
+
+.scanner-loading {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+
+  color: #6f5550;
+}
+
+/* PRODUCT DETAIL */
+
+.product-detail {
+  width: 100%;
+  max-width: 600px;
+
+  min-height: calc(100vh - 234px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 40px;
+}
+
+.product-detail-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.product-detail-image {
+  width: min(70vw, 360px);
+  height: min(50vh, 400px);
+
+  object-fit: contain;
+
+  margin-bottom: 24px;
+}
+
+.product-detail-no-image {
+  width: 220px;
+  height: 220px;
+
+  margin-bottom: 24px;
+
+  border-radius: 30px;
+
+  background: #f3f0e9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 70px;
+}
+
+.product-detail h1 {
+  margin: 0;
+
+  max-width: 90%;
+
+  font-size: 26px;
+  color: #6f5550;
+}
+
+.product-detail-buttons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.product-detail-buttons button {
+  width: 100%;
+
+  min-height: 52px;
+
+  border: none;
+  border-radius: 18px;
+
+  font: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.buy-button {
+  background: #E5989B;
+  color: white;
+}
+
+.finished-button {
+  background: #B36568;
+  color: white;
+}
+
+.scan-again-button {
+  background: #f3f0e9;
+  color: #6f5550;
 }
