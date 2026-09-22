@@ -1,0 +1,60 @@
+.scanner-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  padding: 24px 18px 210px;
+
+  background: #FFCDB2;
+
+  display: flex;
+  justify-content: center;
+}
+
+.scanner-container {
+  width: 100%;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+.camera-view {
+  position: relative;
+
+  width: 100%;
+  height: min(70vh, 650px);
+
+  background: #2d2d2d;
+
+  border-radius: 32px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanner-frame {
+  width: 75%;
+  height: 35%;
+
+  border: 3px solid white;
+  border-radius: 18px;
+
+  box-sizing: border-box;
+}
+
+.scanner-text {
+  margin: 18px 0 0;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #6f5550;
+
+  text-align: center;
+}
